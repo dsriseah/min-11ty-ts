@@ -1,3 +1,8 @@
 module.exports = function(eleventyConfig) {
-    return eleventyConfig;
+  return {
+    dir: {
+      input: "views",
+      output: "_site"
+    }
+  }
 };
