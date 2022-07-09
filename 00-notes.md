@@ -57,4 +57,25 @@ Parsing error: "parserOptions.project" has been set for @typescript-eslint/parse
 The file does not match your project config: .eslintrc.js.
 The file must be included in at least one of the projects provided. eslint
 ```
-enable "formatOnSave" in workspace
+enable "formatOnSave" in workspace so prettier works.
+make sure "default formatter" is set to Prettier
+add to settings.json in workspace
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
+
+## Review
+
+using typescript-eslint parser and plugins, and implementing the typescript eslint recommended and prettier extensions.
+
+NOW LET'S ADD WEBPACK ANBD SEE IF THAT WORKS
+
+npm i -D webpack webpack-cli
+npm i -D @babel/core @babel/preset-env babel-loader
+npm i -D ts-node @babel/preset-typescript
+
+## Now to make things work
+npx webpack --watch

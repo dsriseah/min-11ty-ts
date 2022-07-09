@@ -4,3 +4,4 @@ node_modules/
 # ignore eleventy stuff
 .eleventyignore_*
 _site/
+11ty-extend/_built.js
