@@ -2,12 +2,18 @@
   "name": "sri-leventy",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "@11ty/eleventy": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
   },
   "scripts": {
-    "dev":"npx @11ty/eleventy --serve",
+    "dev": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy"
   },
   "keywords": [],

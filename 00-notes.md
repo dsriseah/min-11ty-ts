@@ -43,3 +43,18 @@ If you are using multiple identifies:
 * add `IdentitiesOnly yes` to config
 * rewrite github origin to match Host you are using in .ssh/config
 
+
+Visual Studio Code has typescript built in now, and I think that means I don't need to actually include it in the eslint chain?
+`[Info  - 12:26:42.278] Using tsserver from: /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/node_modules/typescript/lib/tsserver.js`
+
+npm i -D eslint prettier typescript
+npm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin 
+npm i -D eslint-config-prettier eslint-plugin-import
+
+include .eslintrc.js in tsconfig linting so this error doesn't show up:
+```
+Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
+The file does not match your project config: .eslintrc.js.
+The file must be included in at least one of the projects provided. eslint
+```
+enable "formatOnSave" in workspace

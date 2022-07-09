@@ -5,7 +5,6 @@
     with Prettier.
 
 \*\- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - /*/
-
 module.exports = {
   semi: true,
   printWidth: 82,

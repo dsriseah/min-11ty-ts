@@ -1,8 +1,10 @@
-module.exports = function(eleventyConfig) {
+const EXTENSIONS = require('./.eleventy-extend');
+
+module.exports = function (eleventyConfig) {
   return {
     dir: {
-      input: "views",
-      output: "_site"
+      input: 'views',
+      output: '_site'
     }
-  }
+  };
 };

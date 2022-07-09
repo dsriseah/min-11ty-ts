@@ -1,0 +1,18 @@
+{
+  "include": ["extend-src/**/*.ts", ".eslintrc.js"],
+  "exclude": ["node_modules", "_site"],
+  "compilerOptions": {
+    "module": "es2015", // output module system
+    "moduleResolution": "node", // how to find modules
+    "target": "es2020", // output code generation
+    //
+    "typeRoots": ["./node_modules/@types", "extend-src/types"], // where .d.ts files live
+    "baseUrl": "extend-src", // where to look for imports
+    "paths": {
+      // import alias roots
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true
+  }
+}
